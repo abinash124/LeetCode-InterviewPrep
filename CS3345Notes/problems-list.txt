@@ -1,0 +1,36 @@
+
+Problems on lists:
+
+To be discussed in class:
+
+1. Write a member function of the singly linked list class to reverse the order of its elements: reverse().
+   Use internal details of the class to solve the problem in O(n) time, O(1) extra space.
+
+2. Unzip: Write a member function of the singly linked list to rearrange the entry nodes such that
+   the elements at even index are moved to front, ahead of the elements at odd index: unzip().
+   Use internal details of the class to solve the problem in O(n) time, O(1) extra space.
+   For example, if the list is {1,3,6,2,4,8,3}, then after unzip, it becomes {1,6,4,3,3,2,8}.
+
+3. Suppose you are given two lists of integers, and each list is already sorted, without duplicates.
+   Write a method to output a list of the elements that are common to both lists (intersection).
+   Your algorithm should run in O(n) time, whether they are linked lists or array lists.
+   Write the algorithm only using list operations.  The output is returned in the list "result",
+   initially empty, passed as a parameter to the function.
+
+	void intersect(List<Integer> a, List<Integer> b, List<Integer> result) { ... }
+
+
+Other problems to consider:
+
+4. Algorithms for union and set difference of sorted sets implemented as lists (as in Q3).
+
+5. Suppose SinglyLinkedList class is extended to sorted lists:
+	public class SortedList<T extends Comparable<? super T>> extends SinglyLinkedList<T> { ... }
+   You are given two sorted lists.  Write a member function of SortedList class that merges the entries of
+   the second list into the first list, so that the elements are in sorted order:
+   	merge(SortedList<T> other) // merge the entries of "other" into "this" list so that elements are sorted
+   Use internal details of the implementation to solve the problem in O(n) time, O(1) extra space.
+
+6. Trick question: Given a reference to a node (cursor) in a singly linked list, delete that element from the list in O(1) time.
+
+7. Trick question: Print the elements of a singly linked list in reverse order in O(n) time, using only O(1) extra space.
